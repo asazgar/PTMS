@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.4 on win32)" generated="20211115 21:00:26.139" rpa="false" schemaversion="2">
+<suite id="s1" name="PomLogin" source="C:\Users\ASUS\PycharmProjects\ProjectTMS\TestCases\PomLogin.robot">
+<test id="s1-t1" name="Test title">
+<kw name="Open my Browser" library="K_Login_TMS">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211115 21:00:26.314" level="INFO">Opening browser 'chrome' to base url 'https://tms.podro.com/'.</msg>
+<status status="PASS" starttime="20211115 21:00:26.314" endtime="20211115 21:00:32.538"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211115 21:00:32.539" endtime="20211115 21:00:32.668"/>
+</kw>
+<status status="PASS" starttime="20211115 21:00:26.313" endtime="20211115 21:00:32.669"/>
+</kw>
+<kw name="GotoLogin" library="K_Login_TMS">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${linkLogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211115 21:00:32.670" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div[2]/nav/span'.</msg>
+<status status="PASS" starttime="20211115 21:00:32.669" endtime="20211115 21:00:32.730"/>
+</kw>
+<status status="PASS" starttime="20211115 21:00:32.669" endtime="20211115 21:00:32.730"/>
+</kw>
+<kw name="EnterUserName" library="K_Login_TMS">
+<arg>${username}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${txtUsername}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211115 21:00:32.731" endtime="20211115 21:00:34.563"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtUsername}</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211115 21:00:34.563" level="INFO">Typing text 'PodroFleet' into text field 'name:identity'.</msg>
+<status status="PASS" starttime="20211115 21:00:34.563" endtime="20211115 21:00:34.653"/>
+</kw>
+<status status="PASS" starttime="20211115 21:00:32.730" endtime="20211115 21:00:34.653"/>
+</kw>
+<kw name="EnterPassword" library="K_Login_TMS">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211115 21:00:34.654" level="INFO">Typing text '558Ww%86zD_@Sk9!' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20211115 21:00:34.654" endtime="20211115 21:00:34.761"/>
+</kw>
+<status status="PASS" starttime="20211115 21:00:34.654" endtime="20211115 21:00:34.761"/>
+</kw>
+<kw name="Click Login" library="K_Login_TMS">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btnLogin}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211115 21:00:34.762" level="INFO">Clicking button 'name:go'.</msg>
+<status status="PASS" starttime="20211115 21:00:34.762" endtime="20211115 21:00:34.835"/>
+</kw>
+<status status="PASS" starttime="20211115 21:00:34.762" endtime="20211115 21:00:34.835"/>
+</kw>
+<status status="PASS" starttime="20211115 21:00:26.313" endtime="20211115 21:00:34.835"/>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20211115 21:00:26.141" endtime="20211115 21:00:34.836"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="PomLogin">PomLogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
